@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "TokenAquired";
+}
+
+<h2>TokenAquired</h2>
+
+<script type="text/javascript">
+    $(this).ready(function () {
+        var href = window.location.hash.substring(1);
+        $.ajax({
+            url: "/FacebookPostApp/TokenAquiredAndProcessed?"+href,
+            context: document.body
+        }).done(function () {
+            $(this).addClass("done");
+            window.location = "/FacebookPostApp/PostToFacebook";
+        });
+    });
+     
+</script>

@@ -1,0 +1,24 @@
+﻿@model FacebookPost.Models.FacebookPostValue
+
+@{
+    ViewBag.Title = "PostToFacebook";
+}
+
+<h2>PostToFacebook</h2>
+@using (Html.BeginForm("PostToFacebook", "FacebookPostApp")) { 
+    <fieldset>
+        <legend>UserView</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Post)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Post)
+            @Html.ValidationMessageFor(model => model.Post)
+        </div>
+    
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}

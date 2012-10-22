@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-FacebookPost-20121020151444;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-FacebookPost-20121020151444.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Josué\ Ortiz\ Pérez\\documents\\visual\ studio\ 2012\\Projects\\FacebookPost\\FacebookPost\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
